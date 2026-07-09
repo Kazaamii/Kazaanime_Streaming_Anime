@@ -106,4 +106,4 @@ vercel --prod
 MIT License
 
 ---
-**Made with 💖 by Kazanime Team**
+**Made with 💖 by M Rully Febriansyah**
