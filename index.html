@@ -500,7 +500,7 @@
         <div class="nav-right">
             <div class="search-box" id="searchBoxWrapper">
                 <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                <input type="text" placeholder="Cari anime..." id="searchInput" autocomplete="off">
+                <input type="text" placeholder="Cari anime... (AniList + MyAnimeList)" id="searchInput" autocomplete="off">
                 <span class="search-kbd">Ctrl+K</span>
                 <!-- Search Dropdown / Autocomplete -->
                 <div class="search-dropdown" id="searchDropdown"></div>
@@ -701,7 +701,7 @@
                 </div>
                 <div class="streaming-sidebar">
                     <div class="episode-list" style="margin-top:0"><h4>Pilih Episode:</h4><div class="streaming-eps-scroll"><div class="episodes" id="streamingEpSelector"></div></div></div>
-                    <div class="server-selector" style="margin-top:20px"><h4>🌐 Server Streaming:</h4><p style="font-size:11px;color:var(--text-secondary);margin-bottom:8px">Pilih server jika video tidak bisa diputar</p><div class="server-buttons" id="streamingServerBtns"><button class="server-btn active" onclick="selectStreamingServer('megaplay_ani')">🇯🇵 Server 1 (AniList)</button><button class="server-btn" onclick="selectStreamingServer('megaplay_mal')">🇺🇸 Server 2 (MAL)</button></div></div>
+                    <div class="server-selector" style="margin-top:20px"><h4>🌐 Server Streaming:</h4><p style="font-size:11px;color:var(--text-secondary);margin-bottom:8px">Pilih server jika video tidak bisa diputar</p><div class="server-buttons" id="streamingServerBtns"><button class="server-btn active" onclick="selectStreamingServer('megaplay_ani')">🇯🇵 Server 1 (AniList)</button><button class="server-btn" onclick="selectStreamingServer('megaplay_mal')">🇺🇸 Server 2 (MAL)</button><button class="server-btn" onclick="selectStreamingServer('consumet_gogo')">🌐 Server 3 (Gogo)</button><button class="server-btn" onclick="selectStreamingServer('consumet_zoro')">⚡ Server 4 (Zoro)</button><button class="server-btn" onclick="selectStreamingServer('consumet_9anime')">🎬 Server 5 (9anime)</button><button class="server-btn" onclick="selectStreamingServer('consumet_animepahe')">💎 Server 6 (AnimePahe)</button></div></div>
                 </div>
             </div>
         </div>
@@ -865,7 +865,10 @@
                 <div class="server-buttons">
                     <button class="server-btn active" onclick="selectStreamServer('megaplay_ani')">🇯🇵 Server 1 (MegaPlay)</button>
                     <button class="server-btn" onclick="selectStreamServer('megaplay_mal')">🇺🇸 Server 2 (MAL)</button>
-
+                    <button class="server-btn" onclick="selectStreamServer('consumet_gogo')">🌐 Server 3 (Gogo)</button>
+                    <button class="server-btn" onclick="selectStreamServer('consumet_zoro')">⚡ Server 4 (Zoro)</button>
+                    <button class="server-btn" onclick="selectStreamServer('consumet_9anime')">🎬 Server 5 (9anime)</button>
+                    <button class="server-btn" onclick="selectStreamServer('consumet_animepahe')">💎 Server 6 (AnimePahe)</button>
                 </div>
             </div>
         </div>
@@ -4032,5 +4035,6 @@ async function loadConsumetStream(apiUrl) {
 
 
 </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a187af092d4b8093',t:'MTc4MzYwMzgzMQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"1954b47c125f43f8b4338b3c4f804e4f","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 </html>
