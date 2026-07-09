@@ -440,7 +440,7 @@
             .hero-buttons{flex-direction:column}.btn-watch,.btn-bookmark-hero{width:100%;justify-content:center}
             .avatar-grid{grid-template-columns:repeat(3,1fr)}
             .hero-info{max-width:100%!important}.hero-buttons{gap:8px!important;margin-top:15px!important}.btn-watch,.btn-bookmark-hero{padding:10px 16px!important;font-size:12px!important}
-            .navbar-inner{gap:4px!important}.search-box{display:none}.btn-theme{padding:5px 6px!important;font-size:10px!important}.btn-login{padding:5px 8px!important;font-size:10px!important}
+            .navbar-inner{gap:4px!important}.search-box{padding:4px 8px!important;min-width:0!important;flex:1!important;max-width:120px!important}.search-box input{width:100%!important;font-size:11px!important;min-width:0!important}.search-box svg{width:12px!important;height:12px!important;margin-right:4px!important}.btn-theme{padding:5px 6px!important;font-size:10px!important}.btn-login{padding:5px 8px!important;font-size:10px!important}
             .search-dropdown{width:280px!important;right:0!important;left:auto!important}.profile-name{max-width:50px!important;font-size:10px!important}
         }
 
@@ -501,7 +501,7 @@
         <div class="nav-right">
             <div class="search-box" id="searchBoxWrapper">
                 <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
-                <input type="text" placeholder="Cari anime..." id="searchInput" autocomplete="off">
+                <input type="text" placeholder="Cari anime... (AniList + MyAnimeList)" id="searchInput" autocomplete="off">
                 <span class="search-kbd">Ctrl+K</span>
                 <!-- Search Dropdown / Autocomplete -->
                 <div class="search-dropdown" id="searchDropdown"></div>
@@ -3846,5 +3846,5 @@ console.log('%cPowered by: AniList API & Jikan API','color:#c084fc;font-size:12p
 
 
 </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a1882a781dd42ce1',t:'MTc4MzYwODg4Nw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
